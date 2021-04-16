@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <!--fuente-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <!--iconos-->
+    <link rel="icon" href="/images/icon_azteca-192x192.png">
+    <link rel="icon" href="/images/icon_azteca-64x64.png">
+    <link rel="icon" href="/images/icon_azteca-32x32.png">
 </head>
 
 <body>
@@ -20,9 +24,9 @@
      <nav class="navbar navbar-expand-lg navbar-dark bg-teal fixed-top">
         <!-- Navbar content -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="/#">
+            <a class="navbar-brand" href="#">
                 <!-- Logo -->
-                <img src="/images/logo.png" alt="logo" width="90" height="auto">
+                <img src="/images/logo_azteca.png" alt="logo" width="120" height="auto">
             </a>
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,10 +35,10 @@
 
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item pe-2">
-                        <a class="nav-link"  href="/#work">UBICACIÓN</a>
+                        <a class="nav-link"  href="/#ubicacion">UBICACIÓN</a>
                     </li>
                     <li class="nav-item pe-2">
-                        <a class="nav-link" href="/#about">NOSOTROS</a>
+                        <a class="nav-link" href="/#nosotros">NOSOTROS</a>
                     </li>
                     <li class="nav-item pe-2">
                         <a class="nav-link" href="/#form-contacto">CONTACTO</a>
@@ -76,11 +80,11 @@
       </div>
 
       <!--about-->
-      <div class="container-fluid my-5">
+      <div class="container-fluid my-5" id="nosotros">
         <div class="row justify-content-center">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <h6 class="teal-text">Sobre Nosotros</h6>
-            <h1 class="fw-bold">Bienvenidos al Hotel Azteca</h1>
+            <h1 class="fw-bold py-3">Bienvenidos al Hotel Azteca</h1>
             <p class="secondary-text fs-5">Somos un Hotel tradicional ubicado en Puerto Vallarta, Jalisco, a 10 minutos caminando de la playa y del 
               famoso malecón de nuestra ciudad.<br><br> Puerto Vallarta es famoso por sus playas, los deportes acuáticos y 
               la vida nocturna. En el centro se encuentra la iglesia de Nuestra Señora de Guadalupe, 
@@ -93,6 +97,43 @@
           </div>
         </div>
       </div>
+
+      <!--Ubicacion-->
+      <div class="container-fluid my-5" id="ubicacion">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5057.587125226768!2d-105.23067950336235!3d20.604864135141383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a10f4afb057f0dc!2sHotel%20Azteca!5e0!3m2!1ses-419!2smx!4v1618541511464!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-md-5">
+            <h6 class="teal-text">Ubicación</h6>
+            <h1 class="fw-bold">Encuentranos cerca de la playa y el Río</h1>
+            <p class="secondary-text fs-5">Nuestro Hotel está ubicado en la calle Francisco I. Madero #473 Col. Emiliano Zapata.
+            </p>
+            <p class="secondary-text fs-5">La Playa y el malecón se encuentran a menos de 10 minutos caminando, y a 2 cuadras puedes
+              encontrar la isla del río Cuale, una Pintoresca isla con restaurantes a la orilla del río, lugares para relajarse, tomarse fotos y
+              por la cual se puede llegar al malecón y a la playa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Foto y contacto-->
+      <div class="container-fluid my-5" id="contacto">
+        <div class="row justify-content-center">
+            
+          <div class="col-md-5 pt-4">
+            <h6 class="teal-text">Contacto</h6>
+              <h1 class="fw-bold">Contáctanos para empezar tu aventura en Puerto Vallarta</h2>
+              <h4 class="fw-normal pt-2"><i class="bi bi-telephone-fill"></i> +52 322-222-2750</h4>
+              <h4 class="fw-normal pt-2"><i class="bi bi-envelope-fill"></i> hotelaztecapvta@hotmail.com</h4>
+                
+            </div>
+            
+            <div class="col-md-5">
+              <img id="imagen-contacto" class="img-fluid" src="/images/contacto.jpg" alt="Imagen">
+            </div>
+        </div>
+    </div>
 
 
     </div>
