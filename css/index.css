@@ -90,7 +90,7 @@ i{
 }
 
 #imagen-contacto{
-    border-radius: 10px;
+    border-radius: 7px;
     transition: 0.5s;
 }
 
@@ -118,4 +118,27 @@ footer{
 
 #cuartos{
     color: #fff;
+}
+
+#btn-checar{
+    background-color: #009688;
+    color: #fff;
+    border-radius: 2px;
+}
+
+#btn-checar:hover{
+    background-color: #00796B;
+    transition: .5s;
+}
+
+#formulario{
+    background-color: #0e2737;
+}
+
+#formulario p, #formulario h1{
+    color: #fff;
+}
+
+#formulario img{
+    border-radius: 7px;
 }
