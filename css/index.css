@@ -142,3 +142,18 @@ footer{
 #formulario img{
     border-radius: 7px;
 }
+
+#covid img{
+    width: 200px;
+    height: auto;
+}
+
+#lugares{
+    background-color: #0e2737;
+    color: #fff;
+}
+
+#lugares .carousel-caption{
+    color: #fff;
+    text-shadow: 1px 1px 2px #212121;
+}
