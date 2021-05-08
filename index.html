@@ -104,7 +104,23 @@
         <div class="row justify-content-start">
           
           <!--Carrusel de cuartos-->
-          <div class="col-md-6">
+          <div class="col-md-5 order-sm-1 px-3 pt-3">
+            <h6 class="teal-text">Habitaciones</h6>
+            <h1 class="fw-bold py-2">Contamos con habitaciones para toda la familia</h1>
+            <p class="fs-5">En el Hotel Azteca contamos con habitaciones de 1 a 4 personas con diferentes servicios dependiendo de sus necesidades</p>
+            <p class="fs-4 pt-3">Servicios
+              <ul class="list-unstyled">
+                <li class="my-2"><i class="bi bi-check"></i> Aire acondicionado</li>
+                <li class="my-2"><i class="bi bi-check"></i> Wifi</li>
+                <li class="my-2"><i class="bi bi-check"></i> Baño</li>
+                <li class="my-2"><i class="bi bi-check"></i> Televisión</li>
+                <li class="my-2"><i class="bi bi-check"></i> Cocina</li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="col-md-6 order-sm-12 ">
+            
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -135,22 +151,6 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-          </div>
-
-          <div class="col-md-5 px-3 pt-3">
-            <h6 class="teal-text">Habitaciones</h6>
-            <h1 class="fw-bold py-2">Contamos con habitaciones para toda la familia</h1>
-            <p class="fs-5">En el Hotel Azteca contamos con habitaciones de 1 a 4 personas con diferentes servicios dependiendo de sus necesidades</p>
-            <p class="fs-4 pt-3">Servicios
-              <ul class="list-unstyled">
-                <li class="my-2"><i class="bi bi-check"></i> Aire acondicionado</li>
-                <li class="my-2"><i class="bi bi-check"></i> Wifi</li>
-                <li class="my-2"><i class="bi bi-check"></i> Baño</li>
-                <li class="my-2"><i class="bi bi-check"></i> Televisión</li>
-                <li class="my-2"><i class="bi bi-check"></i> Cocina</li>
-              </ul>
-            </p>
-            
             
           </div>
 
@@ -173,7 +173,8 @@
           </div>
           
           <div class="col-md-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5057.587125226768!2d-105.23067950336235!3d20.604864135141383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a10f4afb057f0dc!2sHotel%20Azteca!5e0!3m2!1ses-419!2smx!4v1618541511464!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0; min-width: 550px;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5057.587125226768!2d-105.23067950336235!3d20.604864135141383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a10f4afb057f0dc!2sHotel%20Azteca!5e0!3m2!1ses-419!2smx!4v1618541511464!5m2!1ses-419!2smx" 
+            width="100%" height="100%" style="border:0; min-width: 100%;" allowfullscreen="" loading="lazy"></iframe>
           </div>
           
         </div>
@@ -188,22 +189,41 @@
           </div>
           <!--form-->
           <div class="col-md-5">
-            <form action="index.php#formulario" class="pt-3 text-start" method="POST">
-              <h6 class="teal-text">Reservaciones</h6>
-              <h1 class="fw-bold">Da el primer paso para visitar Puerto Vallarta</h1>
-              <p>Escoga el rango de fechas de su estancia</p>
-              <input type="text" name="fechas" id="fechas" required/>
-                 
+            <form action="index.php#formulario" class="pt-3 text-center" method="POST">
+              <h6 class="teal-text text-start">Reservaciones</h6>
+              <h1 class="fw-bold text-start">Da el primer paso para visitarnos</h1>
+              <p class="text-start">Escoga el rango de fechas de su estancia</p>
+              <input type="text" class="form-control" name="fechas" id="fechas" required/>
+
               <div class="form-floating my-3">
-                <input type="number" class="form-control" id="adultos" name="adultos" placeholder="1" required>
-                <label for="floatingInput">Adultos</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                <label for="floatingInput">Nombre</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com" required>
+                <label for="floatingInput">Correo electrónico</label>
+            </div>
+               
+            <div class="row justify-content-start">
+              
+              <div class="col-6 col-md-4">
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="adultos" name="adultos" placeholder="1" min="1" max="100" required>
+                  <label for="floatingInput">Adultos</label>
+                </div>
               </div>
 
-              <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="ninos" name="ninos" placeholder="1" required>
-                <label for="floatingInput">Niños</label>
+              <div class="col-6 col-md-4 ps-2">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="ninos" name="ninos" placeholder="1" min="0" max="50" required>
+                  <label for="floatingInput">Niños</label>
+                </div>
               </div>
-
+              
+            </div>
+              <p class="text-start">Al hacer clic en "Checar disponibilidad" acepto el 
+                <a class="link-light" href="/aviso.html">Aviso de privacidad</a></p>
               <button type="submit" class="btn btn-lg" id="btn-checar" >Checar disponibilidad</button>
 
           </form>
@@ -214,8 +234,8 @@
 
       <!--Medidas covid-->
       <div class="container-fluid my-4 text-center" id="covid">
-        <h1 class="fw-bold">Medidas preventivas ante el Covid-19</h1>
-        <div class="row justify-content-center">
+        <h1 class="fw-bold px-2">Medidas preventivas ante el Covid-19</h1>
+        <div class="row justify-content-center px-1">
          
           <div class="col-md-3">
             <img src="/images/icons/distancing.png" class="img-fluid">
@@ -266,35 +286,35 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="/images/muelle.png" class="d-block w-100" alt="Muelle">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption">
                     <h5>Muelle de Playa los Muertos</h5>
                     <p>El muelle se encuentra a 15 minutos caminando desde el Hotel Azteca</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="/images/malecon.png" class="d-block w-100" alt="Malecón">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption">
                     <h5>Malecón</h5>
                     <p>Al Malecón de Puerto Vallarta se puede llegar fácilmente a pie en 10 minutos.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="/images/iglesia.png" class="d-block w-100" alt="Iglesia">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption">
                     <h5>Iglesia de nuestra señora Guadalupe</h5>
                     <p>Esta icónica iglesia de Puerto Vallarta se encuentra tambien en el malecón, a solo 10 minutos a pie.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="/images/isla.png" class="d-block w-100" alt="Isla">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption">
                     <h5>Isla del Río Cuale</h5>
                     <p>Esta isla rodeada por el Río Cuale está a apenas 2 cuadras del Hotel Azteca y se puede recorrer para llegar al malecón</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="/images/mirador.jpg" class="d-block w-100" alt="Mirador">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption">
                     <h5>Mirador de la Cruz</h5>
                     <p>Al mirador de la cruz se puede llegar en 20 minutos caminando sin descansos para apreciar de una hermosa vista de
                       toda la bahía.
@@ -327,7 +347,7 @@
       <div class="container-fluid my-5" id="contacto">
         <div class="row justify-content-center">
             
-          <div class="col-md-5 pt-4">
+          <div class="col-md-5">
             <h6 class="teal-text">Contacto</h6>
               <h1 class="fw-bold py-2">Contáctanos y empieza tu aventura en Puerto Vallarta</h2>
               <h4 class="fw-normal pt-2"><i class="bi bi-telephone-fill"></i> +52 322-222-2750</h4>

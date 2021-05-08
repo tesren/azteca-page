@@ -4,7 +4,7 @@ body{
     color: #212121;
 }
 
-.container-fluid, .row, .col-md-6{
+.container-fluid, .row, .col-md-6, .col-md-4, .col-6{
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
@@ -124,6 +124,7 @@ footer{
     background-color: #009688;
     color: #fff;
     border-radius: 2px;
+    width: 100%;
 }
 
 #btn-checar:hover{
@@ -156,4 +157,41 @@ footer{
 #lugares .carousel-caption{
     color: #fff;
     text-shadow: 1px 1px 2px #212121;
+}
+
+@media (max-width: 768px){
+    
+    #landing-text{
+        position:absolute;
+        width: 100%;
+        top: 100px;
+    }
+    
+    #landing-text h1{
+        font-size: 2rem;
+    }
+    
+    #landing-text h4{
+        font-size: 1.1rem;
+       
+    }
+    
+    #landing-text .btn-lg{
+        font-size: 1rem;
+        padding: 0.4rem 1rem ;
+        margin-top: 1rem;
+    }
+
+    #nosotros .col-md-6{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #nosotros{
+        margin-bottom: 0px !important;
+    }
+    #cuartos{
+        margin-top: 0px !important;
+    }
+    
 }
